@@ -22,8 +22,12 @@ header {
           justify-content: space-between;
 }
 
-header .logo {
+header .header_logo {
   margin-left: 10px;
+}
+
+header .header__menu {
+  margin-right: 30px;
 }
 
 header .nav-list {
