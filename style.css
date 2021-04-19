@@ -30,32 +30,18 @@ header .header__menu {
   margin-right: 30px;
 }
 
-header .nav-list {
-  color: white;
+header .header__menu--profile {
+  margin-right: 8px;
+  width: 40px;
 }
 
-header .nav-list ul {
+header .header__menu--profile ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  padding: 40px 20px;
-}
-
-header .nav-list ul li {
-  padding-left: 20px;
-}
-
-header .nav-list ul li:hover {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  color: purple;
-  cursor: pointer;
-}
-
-header h1 {
-  color: white;
+  padding: 0pxl;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px;
 }
 
 .info {
