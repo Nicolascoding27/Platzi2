@@ -18,6 +18,10 @@ header {
           justify-content: space-between;
 }
 
+header .logo {
+  margin-left: 10px;
+}
+
 header .nav-list {
   color: white;
 }
@@ -27,7 +31,8 @@ header .nav-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 20px;
+  font-size: 16px;
+  padding: 40px 20px;
 }
 
 header .nav-list ul li {
