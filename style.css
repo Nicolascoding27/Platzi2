@@ -30,18 +30,29 @@ header .header__menu {
   margin-right: 30px;
 }
 
-header .header__menu--profile {
-  margin-right: 8px;
-  width: 40px;
-}
-
-header .header__menu--profile ul {
+header .header__menu ul {
+  display: none;
   list-style: none;
   padding: 0pxl;
   position: absolute;
   width: 100px;
   text-align: right;
   margin: 0px 0px 0px -14px;
+}
+
+header .header__menu:hover ul, header ul:hover {
+  display: block;
+}
+
+.header__menu--profile {
+  margin-right: 8px;
+  width: 40px;
+}
+
+.header__menu--profile li {
+  margin: 10px 0px;
+  text-decoration: none;
+  color: white;
 }
 
 .info {
