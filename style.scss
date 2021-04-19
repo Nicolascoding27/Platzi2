@@ -6,7 +6,8 @@
 }
 header{
     width: 100%;
-    background-color:green;
+    height: 80px;
+    background-color:#21C08B;
     display: flex;
     justify-content: space-between;
     .nav-list{
@@ -17,6 +18,11 @@ header{
             padding:10px 20px;
             li{
                 padding-left: 20px;
+                &:hover{
+                    transition: all 1s;
+                    color: purple;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -26,8 +32,14 @@ header{
 }
 .info{
     padding:100px 100px;
+    p{
+        margin-top: 5px;
+    }
     p:nth-child(2n){
         color: red;
+    }
+    p:nth-child(1){
+        margin-top: 20px;
     }
 }
 footer{

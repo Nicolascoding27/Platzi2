@@ -8,7 +8,8 @@
 
 header {
   width: 100%;
-  background-color: green;
+  height: 80px;
+  background-color: #21C08B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,6 +34,13 @@ header .nav-list ul li {
   padding-left: 20px;
 }
 
+header .nav-list ul li:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: purple;
+  cursor: pointer;
+}
+
 header h1 {
   color: white;
 }
@@ -41,8 +49,16 @@ header h1 {
   padding: 100px 100px;
 }
 
+.info p {
+  margin-top: 5px;
+}
+
 .info p:nth-child(2n) {
   color: red;
+}
+
+.info p:nth-child(1) {
+  margin-top: 20px;
 }
 
 footer {
