@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: 'Mulish', sans-serif;
 }
 body{
     background-color:#AB88FF;
@@ -13,19 +13,21 @@ header{
     background-color:#AB88FF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .header_logo{
         margin-left: 10px;
+        width: 200px;
     }
     .header__menu{
-        margin-right: 30px;
-        ul{
+        margin-right: 60px;
+        ul{ 
             display: none;
             list-style: none;
             padding:0pxl;
             position:absolute;
             width: 100px;
             text-align: right;
-            margin: 0px 0px 0px -14px;
+            margin: 100px 0px 0px -14px;
         }
     }
     .header__menu:hover ul, ul:hover{
@@ -33,12 +35,28 @@ header{
         }
     }
     .header__menu--profile{
-        margin-right: 8px;
-        width: 40px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+       
+        img{
+            margin-right: 8px;
+            width: 40px;
+        }
+        p{
+            margin:0px;
+            color: white;
+        }
         li{
             margin: 10px 0px;
+            a{
             text-decoration: none;
             color: white;
+            &:hover{
+                text-decoration: underline;
+                color: black;
+            }
+            }
         }
         
     }

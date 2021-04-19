@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: monospace;
+  font-family: 'Mulish', sans-serif;
 }
 
 body {
@@ -20,14 +20,18 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header_logo {
   margin-left: 10px;
+  width: 200px;
 }
 
 header .header__menu {
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 header .header__menu ul {
@@ -37,7 +41,7 @@ header .header__menu ul {
   position: absolute;
   width: 100px;
   text-align: right;
-  margin: 0px 0px 0px -14px;
+  margin: 100px 0px 0px -14px;
 }
 
 header .header__menu:hover ul, header ul:hover {
@@ -45,14 +49,39 @@ header .header__menu:hover ul, header ul:hover {
 }
 
 .header__menu--profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__menu--profile img {
   margin-right: 8px;
   width: 40px;
 }
 
+.header__menu--profile p {
+  margin: 0px;
+  color: white;
+}
+
 .header__menu--profile li {
   margin: 10px 0px;
+}
+
+.header__menu--profile li a {
   text-decoration: none;
   color: white;
+}
+
+.header__menu--profile li a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .info {
