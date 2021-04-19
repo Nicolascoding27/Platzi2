@@ -26,14 +26,18 @@ header{
 }
 .info{
     padding:100px 100px;
+    p:nth-child(2n){
+        color: red;
+    }
 }
 footer{
 position: fixed;
+bottom: 0px;
 color: white;
 background-color: black;
 width: 100%;
-height: 100%;
-margin-top: 250px;
+// margin-top: 250px;
+
 margin-bottom: 0px;
 ul{
     display: flex;
