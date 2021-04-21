@@ -85,19 +85,23 @@ header .header__menu:hover ul, header ul:hover {
 }
 
 .info {
-  padding: 100px 100px;
+  height: 300px;
 }
 
-.info p {
-  margin-top: 5px;
+.info .info__title {
+  color: white;
+  font-size: 25px;
 }
 
-.info p:nth-child(2n) {
-  color: red;
-}
-
-.info p:nth-child(1) {
-  margin-top: 20px;
+.info .input {
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer {
