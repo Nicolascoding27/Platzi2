@@ -157,4 +157,46 @@ footer ul {
 footer ul li {
   padding: 10px 20px;
 }
+
+.carrousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.carrousel .carrousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+
+.carrousel .carrousel__container:hover {
+  opacity: 0.3;
+}
+
+.carrousel .carrousel__container .carrousel__items {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.carrousel .carrousel__container .carrousel__items:hover ~ .carrousel__items {
+  -webkit-transform: translate3d(100px, 0, 0);
+          transform: translate3d(100px, 0, 0);
+}
+
+.carrousel__container:hover .carrousel__items:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0.3;
+}
 /*# sourceMappingURL=style.css.map */
