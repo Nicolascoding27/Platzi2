@@ -115,11 +115,9 @@ ul{
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
-    &:hover{
-        opacity: 0.3;
 
-    }
 .carrousel__items{
+    background-color: pink;
     width: 200px;
     height: 250px;
     border-radius: 20px;
@@ -137,5 +135,8 @@ ul{
 }
 .carrousel__container:hover .carrousel__items:hover{
     transform: scale(1.5);
+    opacity: 1;
+}
+.carrousel__container:hover .carrousel__items{
     opacity: 0.3;
 }

@@ -171,11 +171,8 @@ footer ul li {
   padding-bottom: 10px;
 }
 
-.carrousel .carrousel__container:hover {
-  opacity: 0.3;
-}
-
 .carrousel .carrousel__container .carrousel__items {
+  background-color: pink;
   width: 200px;
   height: 250px;
   border-radius: 20px;
@@ -197,6 +194,10 @@ footer ul li {
 .carrousel__container:hover .carrousel__items:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  opacity: 1;
+}
+
+.carrousel__container:hover .carrousel__items {
   opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */
