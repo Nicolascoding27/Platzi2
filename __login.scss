@@ -25,22 +25,27 @@
             display: flex;
             flex-direction: column;
             .login__container__remeberMe{
+                font-size: 14px;
                 display: flex;
                 margin-top: 10px;
                 color: white;
                 justify-content: space-between;
                 a{
-                    padding-left: 10px;
+                    padding-left: 30px;
                     text-decoration: none;
                     color: white;
+                    &:hover{
+
+                    }
                 }
             }
-            label{
-                font-size: 14px;;
-            }
             button{
-                border-radius: 50px;
+                border-radius: 40px;
                 margin-top:30px;
+                padding: 15px;
+                color: white;
+                background:gray;
+                border: none;
             }
             .login__container--input{
                 width: 100%;

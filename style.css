@@ -50,6 +50,7 @@
 }
 
 .login .login__container .login__container--form .login__container__remeberMe {
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,18 +62,18 @@
 }
 
 .login .login__container .login__container--form .login__container__remeberMe a {
-  padding-left: 10px;
+  padding-left: 30px;
   text-decoration: none;
   color: white;
 }
 
-.login .login__container .login__container--form label {
-  font-size: 14px;
-}
-
 .login .login__container .login__container--form button {
-  border-radius: 50px;
+  border-radius: 40px;
   margin-top: 30px;
+  padding: 15px;
+  color: white;
+  background: gray;
+  border: none;
 }
 
 .login .login__container .login__container--form .login__container--input {
