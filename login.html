@@ -7,9 +7,43 @@
     <link rel="stylesheet" href="./style.css">
     <title>Login</title>
 </head>
-<body>
-    <header>
+<body clas="inicio">
+    <header class=" header inicio">
         <img class="header_logo"src="./logo-platzi-video-BW2.png" alt="logo">
-        </header>
+    </header>
+        <section class="login">
+            <div class="login__container">
+                <h2>Inicio sesion</h2>
+                <form action="" class="login__container--form">
+                    <input type="text" placeholder="Correo" class="login__container--input">
+                    <input type="text" placeholder="Contraseña" class="login__container--input">
+                
+                <button class="login__container--button">Iniciar sesion</button>
+                <div class="login__container__remeberMe">
+                    <label for="input">Recuerdame
+                        <input type="checkbox" value="checkbox">
+                    </label>
+                    <a href="./index.html">Olvide mi contraseñá</a>
+                </div>
+                </form>
+                <div class="login__container__icons">
+                    <div class="login__container__icons--icon">
+                        <img src="./assets/google-icon.png" alt="google icon">
+                        Inicio de sesion con google
+                    </div>
+                    <div class="login__container__icons--icon">
+                        <img src="./assets/twitter-icon.png" alt="twitter icon">
+                        Inicio de sesion con twitter
+                    </div>
+                </div>
+                <p class="login_container_register">No tienes una cuenta</p>
+                <a href="./index.html">Registrate</a>
+            </div>
+        </section>
+    <footer class="footer">
+        <a href="./index.html">Terminos de uso</a>
+        <a href="./index.html">Declaracion de privacidad</a>
+        <a href="./index.html">Centro de ayuda</a>
+    </footer>
 </body>
 </html>
