@@ -78,10 +78,11 @@ header .header__menu:hover ul, header ul:hover {
 .header__menu--profile li a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
 .header__menu--profile li a:hover {
-  text-decoration: underline;
   color: black;
 }
 
@@ -162,11 +163,14 @@ footer ul li {
 .carrousel {
   width: 100%;
   overflow: scroll;
-  padding: 30px;
+  padding: 0px 15px 15px 15px;
   position: relative;
 }
 
 .carrousel .carrousel__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   white-space: nowrap;
   margin: 70px 0px;
   padding-bottom: 10px;

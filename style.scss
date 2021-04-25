@@ -53,8 +53,8 @@ header{
             a{
             text-decoration: none;
             color: white;
+            transition: all 0.45s;
             &:hover{
-                text-decoration: underline;
                 color: black;
             }
             }
@@ -109,13 +109,15 @@ ul{
 .carrousel{
     width: 100%;
     overflow: scroll;
-    padding: 30px;
+    padding: 0px 15px 15px 15px;
     position: relative;
-
+   
 .carrousel__container{
+    display: flex;
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
+    
 
 .carrousel__items{
     background-color: pink;
