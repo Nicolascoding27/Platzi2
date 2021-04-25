@@ -140,7 +140,7 @@ ul{
     .carrousel-items_details{
         background: linear-gradient(to top, rgba(0,0,0,0.9)0%, rgba(0,0,0,0)110%);
         font-size: 10px;
-        opacity: 1;
+        // opacity: 1;
         transition: 0.45s opacity;
         padding:10px;
         position: absolute;//the container has a relative position so I can move this object because I'm giving it an absolute position 

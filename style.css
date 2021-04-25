@@ -204,7 +204,6 @@ footer ul li {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(110%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 110%);
   font-size: 10px;
-  opacity: 1;
   -webkit-transition: 0.45s opacity;
   transition: 0.45s opacity;
   padding: 10px;
