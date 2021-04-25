@@ -1,6 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
 .inicio {
-  background: green;
+  background: #21c08b;
+}
+
+.login {
+  background: -webkit-gradient(linear, left top, left bottom, from(#21c08b), to(#AB88FF));
+  background: linear-gradient(#21c08b, #AB88FF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px  30px;
+  min-height: calc(100vh -200px);
+}
+
+.login .login__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  border: 2px solid white;
+  padding: 60px 68px 40px;
+  color: white;
+  min-height: 700px;
+  width: 400px;
+}
+
+.login .login__container .login__container--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .login__container .login__container--form .login__container__remeberMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login .login__container .login__container--form .login__container__remeberMe a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.login .login__container .login__container--form label {
+  font-size: 14px;
+}
+
+.login .login__container .login__container--form button {
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.login .login__container .login__container--form .login__container--input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 10px;
+  margin-top: 20px;
+  background: none;
+  text-decoration: underline;
+}
+
+.login .login__container .login__container--form .login__container--input::-webkit-input-placeholder {
+  color: black;
+}
+
+.login .login__container .login__container--form .login__container--input:-ms-input-placeholder {
+  color: black;
+}
+
+.login .login__container .login__container--form .login__container--input::-ms-input-placeholder {
+  color: black;
+}
+
+.login .login__container .login__container--form .login__container--input::placeholder {
+  color: black;
 }
 
 * {
