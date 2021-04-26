@@ -35,7 +35,7 @@
                     text-decoration: none;
                     color: white;
                     &:hover{
-
+                        text-decoration: underline;
                     }
                 }
             }
@@ -45,6 +45,7 @@
                 padding: 15px;
                 color: white;
                 border: none;
+                background-color: gray;
             }
             .login__container--input{
                 width: 100%;
@@ -56,7 +57,15 @@
                 text-decoration: underline;
                 &::placeholder{
                     color: black;
-                }
+                }            
+            }
+
+        }
+        .login__container__icons{
+            display: flex;
+            flex-direction: column;
+            .login__container__icons--icon{
+                
             }
         }
     }

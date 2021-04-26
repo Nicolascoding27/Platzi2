@@ -67,12 +67,17 @@
   color: white;
 }
 
+.login .login__container .login__container--form .login__container__remeberMe a:hover {
+  text-decoration: underline;
+}
+
 .login .login__container .login__container--form button {
   border-radius: 40px;
   margin-top: 30px;
   padding: 15px;
   color: white;
   border: none;
+  background-color: gray;
 }
 
 .login .login__container .login__container--form .login__container--input {
@@ -99,6 +104,16 @@
 
 .login .login__container .login__container--form .login__container--input::placeholder {
   color: black;
+}
+
+.login .login__container .login__container__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 * {
