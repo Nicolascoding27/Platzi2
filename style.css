@@ -162,13 +162,21 @@
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 600px) {
+  .login .login__container {
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
-  overflow-y: none;
 }
 
 body {
@@ -423,8 +431,17 @@ header .header__menu:hover ul, header ul:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .login_container {
-    background-color: transparent;
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,6 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
-    overflow-y: none;
 }
 body{
     background-color:#8F57FD;
@@ -184,7 +183,9 @@ background-color:#AB88FF;
     opacity: 0.3;
 }
 @media only screen and (max-width:600px){
-    .login_container{
-        background-color: transparent;
-    }
+ .footer{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
 }
