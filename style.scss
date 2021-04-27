@@ -6,9 +6,15 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
-body, .main_section{
+body{
     background-color:#8F57FD;
    
+}
+.profile{
+    border-radius: 50%;
+    width: 100px;
+    border: 2px solid transparent;
+    object-fit: cover;
 }
 header{
     width: 100%;
