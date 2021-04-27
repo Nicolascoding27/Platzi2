@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
-body{
+body, .main_section{
     background-color:#8F57FD;
    
 }
@@ -89,42 +89,22 @@ header{
 ::placeholder{
     color:white;
 }
-.footer{
-display: flex;
-align-items: center;
-justify-content: space-around;
-bottom: 0px;
-color: white;
-height: 100px;
-width: 100%;
-text-decoration: none;
-background-color:#AB88FF;
-// margin-top: 250px;
-.footer__link{
+.categories__title{
     color:white;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    position: absolute;
     padding-left: 30px;
-    transition: all 0.45s;
-    &:hover{
-        text-decoration: underline;
-    }
-}
 }
 .carrousel{
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     padding: 0px 15px 15px 15px;
     position: relative;
-   
 .carrousel__container{
     display: flex;
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
-    
-
 .carrousel__items{
     background-color: pink;
     position: relative;//I'm giving it the styles 
@@ -182,8 +162,59 @@ background-color:#AB88FF;
 .carrousel__container:hover .carrousel__items{
     opacity: 0.3;
 }
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0px;
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-decoration: none;
+    background-color:#AB88FF;
+    // margin-top: 250px;
+    ul{}
+    .footer__link{
+        color:white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        transition: all 0.45s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    }
+@media only screen and (max-width:1100px){
+ .carrousel__container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     white-space: normal;
+     margin: none;
+ }
+    .footer{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+}
 @media only screen and (max-width:600px){
- .footer{
+ .carrousel__container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     .carrousel__items{
+        position: relative;//I'm giving it the styles 
+        width: 400px;
+        height: 250px;
+    }
+ }
+    .footer{
      display: flex;
      flex-direction: column;
      align-items: flex-start;
