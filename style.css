@@ -30,6 +30,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 40px;
   border: 2px solid white;
@@ -72,12 +74,17 @@
 }
 
 .login .login__container .login__container--form button {
+  font-size: 16px;
   border-radius: 40px;
   margin-top: 30px;
   padding: 15px;
   color: white;
   border: none;
-  background-color: gray;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  font-weight: bold;
+  height: 50px;
+  letter-spacing: 1px;
 }
 
 .login .login__container .login__container--form .login__container--input {
@@ -87,8 +94,9 @@
   border-top: none;
   border-right: none;
   border-bottom: 2px solid white;
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin-top: 20px;
+  height: 50px;
   outline: none;
   background: transparent;
 }
@@ -160,6 +168,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
+  overflow-y: none;
 }
 
 body {
@@ -292,27 +301,35 @@ header .header__menu:hover ul, header ul:hover {
   color: white;
 }
 
-footer {
-  position: fixed;
-  bottom: 0px;
-  color: white;
-  background-color: black;
-  width: 100%;
-  margin-bottom: 0px;
-}
-
-footer ul {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  bottom: 0px;
+  color: white;
+  height: 100px;
+  width: 100%;
+  text-decoration: none;
+  background-color: #AB88FF;
 }
 
-footer ul li {
-  padding: 10px 20px;
+.footer .footer__link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.footer .footer__link:hover {
+  text-decoration: underline;
 }
 
 .carrousel {
@@ -403,5 +420,11 @@ footer ul li {
 
 .carrousel__container:hover .carrousel__items {
   opacity: 0.3;
+}
+
+@media only screen and (max-width: 600px) {
+  .login_container {
+    background-color: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
