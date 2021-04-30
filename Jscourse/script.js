@@ -27,3 +27,16 @@ const Hello =()=>'Hello'//Es 6
 function Ejemplo(){return true};
 //Expresiva
 var miFuncion = function(){};
+//Template string `${este es un template string}`
+//CALLBACK FUNCTION 
+//Steps to build a Callback function
+//First build a function that will serve as your callback
+function firstCallBack(name){
+    console.log(`Hello  ${name}`)
+}
+//Then build the function that you will call to use the function that you already created
+function getName(callback){
+    const name=prompt('Whats your name');
+    callback(name)
+}
+getName(firstCallBack);
