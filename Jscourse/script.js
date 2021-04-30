@@ -11,3 +11,19 @@ let array1=[{name:'Nicolas',lastName:'Diaz',age:15 }]
 //typeof to get what is the value type of whatever I'm coding
 //typeof Null= OBJECT typeof Array=Object
 //Variables 
+var edad;
+edad=15;//Inicializo la variable despues
+//Hoisting
+//Ejemplo 1; si corre
+Hello();
+function Hello(){
+    console.log('Nicolas says hi')
+}
+//Ejemplo 2; no corre
+Hello()//la variable se almacena primero me va a aparecer undefined
+const Hello =()=>'Hello'//Es 6 
+//Funciones; Tipos de funciones 
+//Declarativas 
+function Ejemplo(){return true};
+//Expresiva
+var miFuncion = function(){};
