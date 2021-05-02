@@ -90,3 +90,15 @@ var a=4+"7";//+ operator creates cohersion
 console.log(a)//47
 var b=4*"7"//operator * does not create cohersion
 console.log(b)//28
+
+//Truthy and Falsy 
+Boolean();False
+Boolean(0);False 
+Boolean(null);False 
+Boolean(NaN);False 
+Boolean(undefined);False 
+Boolean("");False 
+Boolean("a");True 
+Boolean(" ");True 
+Boolean("[]");True
+ 
