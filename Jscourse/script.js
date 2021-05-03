@@ -170,3 +170,31 @@ switch(expression) {
             default:
             'Please wake up early'    
   }
+//If I dont put a break it validates all the validations; 
+//Arrays
+//Estructura otipo objeto 
+//Metodos para array .push(); .pop() eliminar ultimo .unshift()agrega al inicio .shift()elimina al inicio
+//indexOf//Me devuelve el index de ese elemento
+///Para evitar el hoisting deberiamos evir el var 
+//FOR OF 
+let array=[1,2,3]
+for( let numeros of array){
+    console.log(numeros)
+}
+//while 
+while(array.length>0){
+    array.shift()
+    console.log(array)
+}
+
+//Objetos
+var my_Car={
+    name:'BMW',
+    model:'2017',
+    año:2021,
+    detalDelAuto:function(){
+        console.log(`Auto ${this.model} ${this.año}`)
+    }
+}
+my_Car.detalDelAuto();
+
