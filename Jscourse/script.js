@@ -146,4 +146,27 @@ switch(expression) {
   //operador ternario 
   var a=1
   var resultado = a ? 'soy uno':'no soy uno';
-  
+  //Switch again 
+  switch(expression que se evalua ) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+  }
+  switch( wakeup){
+      case wakeup ==='early':
+          'I am productive'
+          break;
+      case wakeup ==='late':
+          'I suck'
+           break;
+      case wakeup===false:
+        ' I died'
+           break;
+            default:
+            'Please wake up early'    
+  }
