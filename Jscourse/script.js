@@ -198,3 +198,32 @@ var my_Car={
 }
 my_Car.detalDelAuto();
 
+//clases y constructores 
+class car {
+    constructor(brand,model,year){
+        this.brand=brand;
+        this.model=model;
+        this.year=year;
+    }
+    
+showCarBrand(){
+    return  this.brand
+}
+}
+const myAudi=newcar('audi','A7','2020')
+//Creating a loop for the classes 
+const autos = []
+for(let i=0;i<3;i++){
+    let brand=prompt('insert the brand of the car')
+    let year=prompt('insert the year of the car')
+    let model= prompt('insert the model of the car')
+    let car1=new car (brand,year,model)
+    autos.push(car1)
+}
+const encuentraArticulo=autos.find(function(articulo){
+    return articulo.nombre==='laptop'
+})
+const laptop=autos.find((article)=>article.nombre='laptop')
+autos.forEach((articulos)=>articulos.name)
+const audi_cars=autos.some((articulos)=>articulos.name==='audi')//it returns true or false
+
