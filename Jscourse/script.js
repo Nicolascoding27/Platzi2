@@ -102,3 +102,14 @@ Boolean("a");True
 Boolean(" ");True 
 Boolean("[]");True
  
+//Operadores
+!false// esto es una negacion 
+//The difference between == and ===
+//== just compares the value not the data type EX:
+2=='2'//true 
+2==='2'//False it compares if they are literally equal. 
+//Concatenation 
+'Nicolas'+'es lindo'//'Nicolas es lindo'
+a&&b//both of the variables have to be true 
+a || b //a o b pero con las lineas 
+edad += 2 // la variable aumenta en 2
