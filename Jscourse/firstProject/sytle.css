@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 30px;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px;
+}
+
+label {
+  padding: 20px 20px;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.result h3 {
+  padding-left: 20px;
+  color: red;
+}
+
+select {
+  background-color: gray;
+  color: red;
+}
+
+option {
+  color: red;
+}
+
+.Juega {
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  color: white;
+  background-color: gray;
+}
+
+.Juega :hover {
+  cursor: pointer;
+  background-color: tomato;
+}
+/*# sourceMappingURL=sytle.css.map */

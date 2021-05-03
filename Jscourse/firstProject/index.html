@@ -11,10 +11,15 @@
     <main>
         <h1>Este es mi juego de  piedra papel o tijera</h1>
         <label for="user_input">Ingresa una opcion entre piedra papel y tijera
-        <input type="text" class="user_input">
+        <select name="user_option" id="user_option">
+            <option value="piedra">Piedra</option>
+            <option value="papel">Papel</option>
+            <option value="tijera">Tijera</option>
+        </select>
         </label>
+        <button class="Juega">Juega</button>
         <div class="result">
-        <h2>El resultado es:</h2>
+        <h2>Quien gano?</h2>
         <h3 class="result" id="result">3</h3>
         </div>
     </main>

@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+}
+body{
+    background-color:black ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+   
+}
+label{
+    padding: 20px 20px;
+}
+.result{
+    display: flex;
+}
+.result h3{
+    padding-left:20px;
+    color:red;
+}
+select{
+    background-color: gray;
+    color:red
+}
+option{
+    color:red
+}
+.Juega{
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    color: white;
+    background-color: gray;
+}
+.Juega :hover{
+    cursor: pointer;
+    background-color: tomato;
+}
