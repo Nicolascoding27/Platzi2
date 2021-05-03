@@ -113,3 +113,37 @@ Boolean("[]");True
 a&&b//both of the variables have to be true 
 a || b //a o b pero con las lineas 
 edad += 2 // la variable aumenta en 2
+
+//Condicionales--reglas para condicionar algo 
+if(){
+
+}
+//Switch cheat sheet 
+switch(expression) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+  }
+  switch( wakeup){
+      case wakeup ==='early':
+          'I am productive'
+          break;
+      case wakeup ==='late':
+          'I suck'
+           break;
+      case wakeup===false:
+        ' I died'
+           break;
+            default:
+            'Please wake up early'    
+  }
+
+  //operador ternario 
+  var a=1
+  var resultado = a ? 'soy uno':'no soy uno';
+  
