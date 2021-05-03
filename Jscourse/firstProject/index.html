@@ -10,17 +10,21 @@
 <body>
     <main>
         <h1>Este es mi juego de  piedra papel o tijera</h1>
-        <label for="user_input">Ingresa una opcion entre piedra papel y tijera
-        <select name="user_option" id="user_option">
-            <option value="piedra">Piedra</option>
-            <option value="papel">Papel</option>
-            <option value="tijera">Tijera</option>
+        <div class="main__options">
+        <h2>Ingresa una opcion entre piedra papel y tijera</h2>
+            <label for="">Piedra
+            <input type="checkbox" name="Piedra" id="Piedra" value="Piedra">
+            <label for="">Tijera
+            <input type="checkbox" name="Tijera" id="Tijera" value="Tijera">
+            <label for="">Papel
+            <input type="checkbox" name="Piedra" id="Papel" value="Papel">
+            </label>
+        </div>
         </select>
-        </label>
         <button class="Juega">Juega</button>
         <div class="result">
         <h2>Quien gano?</h2>
-        <h3 class="result" id="result">3</h3>
+        <h3 class="result_text" id="result_text">3</h3>
         </div>
     </main>
 </body>

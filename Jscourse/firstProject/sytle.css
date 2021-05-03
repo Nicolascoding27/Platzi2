@@ -64,4 +64,8 @@ option {
   cursor: pointer;
   background-color: tomato;
 }
+
+.main_options {
+  color: white;
+}
 /*# sourceMappingURL=sytle.css.map */
