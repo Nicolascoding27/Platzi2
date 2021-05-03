@@ -24,10 +24,10 @@ function validate(a,b){
             case 'Piedra':
                 switch(b){
                     case 'Papel':
-                    console.log('You win')
+                        result.innerHTML='You win'
                     break;
                     case 'Tijera':
-                    console.log('The machine wins')
+                        result.innerHTML='The machine wins'
                     break;
                 } 
             }  
@@ -35,10 +35,10 @@ function validate(a,b){
             case 'Tijera':
                 switch(b){
                     case 'Papel':
-                    console.log('The machine wins')
+                        result.innerHTML='The machine wins'
                     break;
                     case 'Piedra':
-                    console.log('You win')
+                        result.innerHTML='You win'
                     break;
                 }    
             }
@@ -46,10 +46,10 @@ function validate(a,b){
             case 'Papel':
                 switch(b){
                     case 'Piedra':
-                    console.log('The machine wins')
+                        result.innerHTML='The machine wins'
                     break;
                     case 'Tijera':
-                    console.log('You win')
+                        result.innerHTML='You win'
                     break;
                 } 
             }   
