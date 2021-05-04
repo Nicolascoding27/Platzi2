@@ -96,3 +96,12 @@ function retornandoObjeto(persona){
     }
 }
 retornandoObjeto(Dario)
+//Tenemos dos opciones la primera es modificar un objeto o duplicarlo y cambiarle un atributo 
+//--Parametros como referencia o valor 
+function cumpleanos(persona)
+//---COMPARACIONES EN VARIABLES 
+var x =4;
+var y='4'
+x==y//true --It compares the intrinsic value but it does not compare the data type 
+x===y//false-- It compares the value and the data type 
+//Is it better to use the === instead of ==
