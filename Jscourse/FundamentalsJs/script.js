@@ -79,3 +79,20 @@ function nameAndAge(persona){
     console.log(`Hola mi no3mbre es ${nombre},y tengo ${age}`)
 }
 nameAndAge(Dario)
+
+function cumple(persona){
+    persona.age+=1
+    var {age}=persona
+    console.log(`mi edad es ${age}`)
+}//El objeto se ve modificado
+cumple(Nicolas)
+//Js behaves different with objects, los objetos que pasamos por paremtro se pasan por referencia
+///Como llamar un nuevo objecto que tenga los mismos atributos del objeto anterior
+//---Debemos retornar un objeto 
+function retornandoObjeto(persona){
+    return {
+        ...persona,//Aca es donde duplico el objeto
+        age:persona.age+=1
+    }
+}
+retornandoObjeto(Dario)
