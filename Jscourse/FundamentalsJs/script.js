@@ -19,3 +19,63 @@ console.log(numberOfLetters)
 //Interpolacion de variables 
 var fullName=`${appellidoUpperCase}+${firstletter}`
 console.log(fullName)
+
+// Access to a substring
+var str= nombre.charAt(1)+nombre.charAt(2)
+//second way
+var srt2=nombre.substr(1,2)
+//Number variables
+var edad=27
+edad+=1
+//Restar
+edad-=1
+//Aproximar 
+Math.round()
+//pasar a estring 
+var total=294.4444444
+var total_round_3=total.toFixed(3)//3 decimales
+var totalString=parseFloat(total)
+
+//Funciones 
+//Las funciones sirven para reutilizar codigo
+//Alcance de las funciones, la idea es no modificar las variables globales 
+/// De esta manera lo que estamos haciendo es no modificar las variables globales
+// var nombre ='Nicolas'
+// function returnNameUpperCase(nombre){
+//     nombre=nombre.toUpperCase()
+//     console.log(nombre)
+// }
+// returnNameUpperCase(nombre)
+//Objetos 
+var Dario ={
+    nombre:'Dario',
+    apellido:'Diaz',
+    age:15
+}
+var Nicolas ={
+    nombre:'Nicolas',
+    apellido:'Diaz',
+    age:21
+}
+
+//Just getting the attribute name --NEW WAY TO DO IT 
+function nameToUpperCase({nombre}){
+    console.log(nombre.toUpperCase())
+}
+nameToUpperCase(Dario)
+nameToUpperCase(Nicolas)
+
+//Another way to call the function 
+function nameToUpperCase(persona){ //The patameter is an object
+    //var (nombre)
+    var { nombre }=persona//Im calling the attribute of the object here by using {}
+    console.log(nombre.toUpperCase())
+}
+
+//solo hay un parametro el cual corresponde al objeto
+function nameAndAge(persona){
+    var {nombre}=persona
+    var{age}=persona
+    console.log(`Hola mi no3mbre es ${nombre},y tengo ${age}`)
+}
+nameAndAge(Dario)
