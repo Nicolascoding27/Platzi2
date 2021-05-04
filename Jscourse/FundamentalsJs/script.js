@@ -105,3 +105,7 @@ var y='4'
 x==y//true --It compares the intrinsic value but it does not compare the data type 
 x===y//false-- It compares the value and the data type 
 //Is it better to use the === instead of ==
+var otraPersona={
+    ...Dario
+}
+var test='this is a test'
