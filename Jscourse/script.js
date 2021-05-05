@@ -227,3 +227,7 @@ const laptop=autos.find((article)=>article.nombre='laptop')
 autos.forEach((articulos)=>articulos.name)
 const audi_cars=autos.some((articulos)=>articulos.name==='audi')//it returns true or false
 
+//espresive function js 
+var funcion1= function(){
+    console.log('this is an expressive function ')
+}
