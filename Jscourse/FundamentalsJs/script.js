@@ -111,6 +111,7 @@ var otraPersona={
 var test='this is a test'
 
 // ---Condicionales----
+
 var persona1={
     nombre:'Sasha',
     ingeniero:true,
@@ -129,5 +130,14 @@ function imprimirProfesiones(persona){
 function imprimirSiesMayordeEdad(persona){
     persona.edad>18 ? console.log(`${persona.nombre} es mayor de edad`) : console.log(`${persona.nombre} es menor de edad`)
 }
+const MAYORIA_DE_EDAD=18
+//this function returns true or false
+function imprimirSiesMayordeEdad2(persona){
+    return persona.edad>=18
+}
 imprimirSiesMayordeEdad(persona1)
 imprimirSiesMayordeEdad(persona2)
+var test=imprimirSiesMayordeEdad2(persona1)
+console.log(test)
+
+///---ARROW FUNCTION----///
