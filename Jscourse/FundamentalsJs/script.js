@@ -141,3 +141,14 @@ var test=imprimirSiesMayordeEdad2(persona1)
 console.log(test)
 
 ///---ARROW FUNCTION----///
+//Asign to a variable a function
+var persona1={
+    nombre:'Sasha',
+    ingeniero:true,
+    edad:19 
+}
+const ES_MAYOR_DE_EDAD=persona=>{ //cuando solo tengo una variable no uso parentesis
+    persona.edad > 18? console.log('I can drink') : console.log('I cant drink')
+}
+ES_MAYOR_DE_EDAD(persona1)
+//--DECONSTRUCTING THE PARAMETER
