@@ -109,3 +109,25 @@ var otraPersona={
     ...Dario
 }
 var test='this is a test'
+
+// ---Condicionales----
+var persona1={
+    nombre:'Sasha',
+    ingeniero:true,
+    edad:19 
+}
+var persona2={
+    nombre:'Nico',
+    ingeniero:false ,
+    edad:13
+}
+
+function imprimirProfesiones(persona){
+    console.log(`${persona.nombre} es:`)
+    persona.ingeniero ? console.log('Ingeniero') : console.log('pussy')
+}
+function imprimirSiesMayordeEdad(persona){
+    persona.edad>18 ? console.log(`${persona.nombre} es mayor de edad`) : console.log(`${persona.nombre} es menor de edad`)
+}
+imprimirSiesMayordeEdad(persona1)
+imprimirSiesMayordeEdad(persona2)
