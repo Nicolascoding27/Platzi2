@@ -193,13 +193,50 @@
 // }
 // console.log(`Pasaron ${dias} dias hasta que Nick adelgazo 3kg`)
 ///----Do while----
-let contador=0;
-let llueve=()=>Math.random()<0.25//Me indica que llueve el 25% de las veces 
-do{
-    contador ++;
-}while(!llueve())//mientras no llueva 
-// console.log(`Fui a ver si llovia ${contador} veces`)
+// let contador=0;
+// let llueve=()=>Math.random()<0.25//Me indica que llueve el 25% de las veces 
+// do{
+//     contador ++;
+// }while(!llueve())//mientras no llueva 
+// // console.log(`Fui a ver si llovia ${contador} veces`)
 
-let frecuency= contador===1 ? console.log(`Fui a ver si llovia ${contador} vez`):console.log(`Fui a ver si llovia ${contador} veces`)
+// let frecuency= contador===1 ? console.log(`Fui a ver si llovia ${contador} vez`):console.log(`Fui a ver si llovia ${contador} veces`)
 
+//---SWITCH + DOM MANIPULATION
 
+const VER_RESULTADO=document.querySelector('.ver')
+const SIGNO=document.querySelector('.signo')
+const RESULTADO=document.querySelector('.result')
+const SHOW_RESULT=()=>{
+    var signo=SIGNO.value
+    var signoL=signo.toLowerCase()
+    switch (signoL){
+        case 'sagitario':
+            RESULTADO.innerHTML=
+            'Tu cumpleaños es en Enero'
+        break;
+        case 'tauro':
+            RESULTADO.innerHTML=
+            'Tu cumpleaños es en Abril'
+        break;
+        case 'fuckboy':
+            RESULTADO.innerHTML=
+            'Tu cumpleaños es en Pussy'
+        break;
+        case 'worker':
+            RESULTADO.innerHTML=
+            'Tu cumpleaños es en NUNCA TRABAJA'
+        break;
+        case 'ceo':
+            RESULTADO.innerHTML=
+            'Tu cumpleaños es JAMAS SIGUE TRABAJANDO'
+        break;
+        default:
+            RESULTADO.innerHTML=
+            'INSERTA UN VALOR CORRECTO NO SEAS HPTA'
+        break;
+    }
+    // console.log(SIGNO.value)
+    SIGNO.value=''
+}
+VER_RESULTADO.addEventListener('click',()=>{SHOW_RESULT()})

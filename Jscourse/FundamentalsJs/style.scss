@@ -41,6 +41,7 @@ input{
     border-top: none;
     border-bottom: 2px solid gray;
     margin-bottom: 20px;
+    transition: all 0.45s;
     &:hover{
         color: blue;
         background-color: brown;

@@ -55,6 +55,8 @@ input {
   border-top: none;
   border-bottom: 2px solid gray;
   margin-bottom: 20px;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
 .ver:hover {
