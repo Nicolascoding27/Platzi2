@@ -11,4 +11,21 @@ body{
     color: white ;
     font-size: 20px;
     padding: 100px 20px ;
+    flex-direction: column;
+}
+h2{
+    color:red;
+    padding: 20px 20px;
+}
+input{
+    background-color: gray;
+    outline: none;
+    border-bottom: 2px white;
+    border-radius: 25px;
+    width: 250px;
+    padding-top:30px;
+    padding-left: 25px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
 }

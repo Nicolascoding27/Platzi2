@@ -168,27 +168,38 @@
 //     console.log(persona)
 // }
 
-const AUMENTAR_DE_PESO=persona=> persona.peso+=0.2 //flecha sin llaves hace que 
-const DISMINUIR_DE_PESO=(persona)=>{
-    persona.peso-=0.2
-}//Tofixed()solo lo que esta despues de la coma
-// ciclo_edad(persona1)
-///--while-------
-let persona1={
-    nombre:"nico",
-    peso:75
-}
-const COME_MUCHO= ()=>Math.random()<0.3
-const REALIZA_DEPORTE=()=>Math.random()<0.4//40% de los dias 
-let META_PESO= persona1.peso-3
-let dias=0
-while(persona1.peso>META_PESO){
-    if(COME_MUCHO()){
-        AUMENTAR_DE_PESO(persona1)
-    }
-    if(REALIZA_DEPORTE()){
-        DISMINUIR_DE_PESO(persona1)
-    }
-    dias +=1               
-}
-console.log(`Pasaron ${dias} dias hasta que Nick adelgazo 3kg`)
+// const AUMENTAR_DE_PESO=persona=> persona.peso+=0.2 //flecha sin llaves hace que 
+// const DISMINUIR_DE_PESO=(persona)=>{
+//     persona.peso-=0.2
+// }//Tofixed()solo lo que esta despues de la coma
+// // ciclo_edad(persona1)
+// ///--while-------
+// let persona1={
+//     nombre:"nico",
+//     peso:75
+// }
+// const COME_MUCHO= ()=>Math.random()<0.3
+// const REALIZA_DEPORTE=()=>Math.random()<0.4//40% de los dias 
+// let META_PESO= persona1.peso-3
+// let dias=0
+// while(persona1.peso>META_PESO){
+//     if(COME_MUCHO()){
+//         AUMENTAR_DE_PESO(persona1)
+//     }
+//     if(REALIZA_DEPORTE()){
+//         DISMINUIR_DE_PESO(persona1)
+//     }
+//     dias +=1               
+// }
+// console.log(`Pasaron ${dias} dias hasta que Nick adelgazo 3kg`)
+///----Do while----
+let contador=0;
+let llueve=()=>Math.random()<0.25//Me indica que llueve el 25% de las veces 
+do{
+    contador ++;
+}while(!llueve())//mientras no llueva 
+// console.log(`Fui a ver si llovia ${contador} veces`)
+
+let frecuency= contador===1 ? console.log(`Fui a ver si llovia ${contador} vez`):console.log(`Fui a ver si llovia ${contador} veces`)
+
+
