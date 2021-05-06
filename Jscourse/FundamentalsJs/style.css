@@ -28,6 +28,7 @@ body {
 h2 {
   color: red;
   padding: 20px 20px;
+  font-size: 36px;
 }
 
 input {
@@ -41,5 +42,24 @@ input {
   color: white;
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+.ver {
+  background-color: white;
+  color: black;
+  width: 200px;
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 15px;
+  border-top: none;
+  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
+}
+
+.ver:hover {
+  color: blue;
+  background-color: brown;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
