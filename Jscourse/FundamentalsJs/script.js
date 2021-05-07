@@ -202,41 +202,61 @@
 
 // let frecuency= contador===1 ? console.log(`Fui a ver si llovia ${contador} vez`):console.log(`Fui a ver si llovia ${contador} veces`)
 
-//---SWITCH + DOM MANIPULATION
+//---SWITCH + DOM MANIPULATION-----------
 
-const VER_RESULTADO=document.querySelector('.ver')
-const SIGNO=document.querySelector('.signo')
-const RESULTADO=document.querySelector('.result')
-const SHOW_RESULT=()=>{
-    var signo=SIGNO.value
-    var signoL=signo.toLowerCase()
-    switch (signoL){
-        case 'sagitario':
-            RESULTADO.innerHTML=
-            'Tu cumpleaños es en Enero'
-        break;
-        case 'tauro':
-            RESULTADO.innerHTML=
-            'Tu cumpleaños es en Abril'
-        break;
-        case 'fuckboy':
-            RESULTADO.innerHTML=
-            'Tu cumpleaños es en Pussy'
-        break;
-        case 'worker':
-            RESULTADO.innerHTML=
-            'Tu cumpleaños es en NUNCA TRABAJA'
-        break;
-        case 'ceo':
-            RESULTADO.innerHTML=
-            'Tu cumpleaños es JAMAS SIGUE TRABAJANDO'
-        break;
-        default:
-            RESULTADO.innerHTML=
-            'INSERTA UN VALOR CORRECTO NO SEAS HPTA'
-        break;
-    }
-    // console.log(SIGNO.value)
-    SIGNO.value=''
+// const VER_RESULTADO=document.querySelector('.ver')
+// const SIGNO=document.querySelector('.signo')
+// const RESULTADO=document.querySelector('.result')
+// const SHOW_RESULT=()=>{
+//     var signo=SIGNO.value
+//     var signoL=signo.toLowerCase()
+//     switch (signoL){
+//         case 'sagitario':
+//             RESULTADO.innerHTML=
+//             'Tu cumpleaños es en Enero'
+//         break;
+//         case 'tauro':
+//             RESULTADO.innerHTML=
+//             'Tu cumpleaños es en Abril'
+//         break;
+//         case 'fuckboy':
+//             RESULTADO.innerHTML=
+//             'Tu cumpleaños es en Pussy'
+//         break;
+//         case 'worker':
+//             RESULTADO.innerHTML=
+//             'Tu cumpleaños es en NUNCA TRABAJA'
+//         break;
+//         case 'ceo':
+//             RESULTADO.innerHTML=
+//             'Tu cumpleaños es JAMAS SIGUE TRABAJANDO'
+//         break;
+//         default:
+//             RESULTADO.innerHTML=
+//             'INSERTA UN VALOR CORRECTO NO SEAS HPTA'
+//         break;
+//     }
+//     // console.log(SIGNO.value)
+//     SIGNO.value=''
+// }
+// VER_RESULTADO.addEventListener('click',()=>{SHOW_RESULT()})
+
+//----Arrays----//
+var audi={
+    brand:'audi',
+    year:2020
 }
-VER_RESULTADO.addEventListener('click',()=>{SHOW_RESULT()})
+var volvo={
+    brand:'audi',
+    year:2019
+}
+var mazda={
+    brand:'mazda',
+    year:2016
+}
+var cars=[audi,volvo,mazda]
+
+//--Filtrar elementos 
+var carros_nuevos=cars.filter((carro)=>carro.year>2018)
+// --Con el objeto desagregado 
+var carros_nuevos2=cars.filter(({year})=>year>2018)
