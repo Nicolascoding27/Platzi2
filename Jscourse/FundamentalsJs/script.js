@@ -260,3 +260,73 @@ var cars=[audi,volvo,mazda]
 var carros_nuevos=cars.filter((carro)=>carro.year>2018)
 // --Con el objeto desagregado 
 var carros_nuevos2=cars.filter(({year})=>year>2018)
+
+//-Como modificar arrays--
+//--Usar funcion Map 
+//Map modifica el array 
+var carros_nuevos3=cars.map(NEW_CARS)
+const  NEW_CARS= carros=>{
+    carros.year+=1
+    return carros.year
+}
+
+const  NEW_CARS5= carros=>{
+    return {
+        ...cars,//duplico el objeto
+        year:carros.year+=1
+    }
+}
+///-PRANTICANDO LA DESAGREGACION DE OBJETOS Y LAS TRANSFORMACIONES DE ARRAYS
+// let persona1={
+//     nombre:"nico",
+//     peso:75
+// }
+// let persona2={
+//     nombre:"Felipe",
+//     peso:80
+// }
+// let persona3={
+//     nombre:"Carlos",
+//     peso:81
+// }
+// var personas=[persona1,persona2,persona3]//creacion del array con objetos 
+// //Creacioon de la funcion callback para duplicar y modificar el objeto
+// const SUBIDA_DE_PESO2=(persona)=>{
+//     return {
+//     ...persona,//duplicate the object
+//     peso:persona.peso+=1//wrong 
+//     }
+// }
+// persona.peso+=1//le sumo 1 a persona.peso tambien
+// persona.peso= persona.peso+1
+// const NEW_PERSONAS=personas.map((persona)=>{
+//     return {
+//         ...persona,//duplicate the object
+//         peso:persona.peso+1
+//         }
+// })
+// //Creacion del nuevo array con el objeto modificado 
+// console.log('Nuevito2')
+// console.log(NEW_PERSONAS)
+// console.log(personas[0]===NEW_PERSONAS[0])
+
+///---Reduce------////
+////---Esta es una forma mas organizada y me permite separar el reduce----///
+const reducer=(acum,persona)=>{
+    return acum +persona.cantidadDeLibros
+}
+let totalLibros=libros.reduce(reducer,0)
+
+///---Clases en JS---- prototipos y clases---///
+///Definicion de prototipo
+function persona(name,age,interests){
+    this.name=name
+    this.age=age
+    this.interests=interests
+}
+persona.prototype.sayhi=function(){
+    console.log(`Hola soy ${this.name}`)
+}
+//The word new is just for creating objects 
+const Nico=new persona('nico',20,'coding')
+Nico.sayhi()
