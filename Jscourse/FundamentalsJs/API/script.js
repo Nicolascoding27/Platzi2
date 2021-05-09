@@ -3,7 +3,9 @@ const API_PEOPLE='people/:id' //saco a la gente de la api
 
 const LUKE_URL= `${API_URL}${PEOPLE_URL.replace(':id',1)}`
 const opts={crossDomain=true}
+    function Obtain_character(id){
 
+    }
 
 
 
