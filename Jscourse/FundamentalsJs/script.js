@@ -402,3 +402,6 @@ function responderSaludo(nombre,apellido,esDev){
     this.esDev=esDev
     console.log(`Hi ${nombre} ${apellido}`)
 }
+console.log('a')
+setTimeout(()=>console.log('b'),2000) 
+console.log('c')
