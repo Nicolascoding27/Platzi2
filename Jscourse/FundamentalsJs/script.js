@@ -319,14 +319,61 @@ let totalLibros=libros.reduce(reducer,0)
 
 ///---Clases en JS---- prototipos y clases---///
 ///Definicion de prototipo
-function persona(name,age,interests){
+function persona(name,age,interests,height){
     this.name=name
     this.age=age
     this.interests=interests
+    this.height=height 
 }
+//Siempre colocar las funciones del prototipo juntas    
 persona.prototype.sayhi=function(){
     console.log(`Hola soy ${this.name}`)
 }
+persona.prototype.soyalto=()=> console.log(this)
 //The word new is just for creating objects 
-const Nico=new persona('nico',20,'coding')
+const Nico=new persona('nico',20,'coding',2)
 Nico.sayhi()
+Nico.soyalto()//las arrow functions tienen un this differente a las funciones normales.
+function desarrollador(nombre,apellido){
+    this.nombre=nombre,
+    this.apellido=apellido
+}
+function heredaDe(prototipoHijo,prototipoPadre){
+    var fn=function(){}
+    fn.prototype=prototipoPadre.prototype
+    prototipoHijo.prototype=new fn 
+    claseHija.prototype.constructor=prototipoHijo
+}
+///---WHAT IS A PROTOTYPE
+function Particle(){
+    this.x=100;
+    this.y=99;
+    // this.show=function(){
+    //     point=(this.x,this.y);
+    // }
+}
+particle.prototype=function(){
+    PointerEvent(this.x,this.y)
+}
+var p=new particle()
+//proto propertie 
+heredaDe()
+
+//--clases en js----
+//Por debajo todos siguen siendo prototipos
+class Persona{
+    constructor(name,apellido){
+        this.name=name
+        this.appelido=apellido
+        this.altura=altura
+    }
+    soyAlto(){
+        return this.altura>1.8
+    }
+}
+var nico=new Persona('nico','diaz',1.9)
+//--herencia = extends
+class desarrollador extends Persona{
+super(nombre,apellido,altura)
+}
+var oscar= new desarrollador('oscar','gomez',1.89)
