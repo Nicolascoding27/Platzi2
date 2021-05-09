@@ -362,18 +362,43 @@ heredaDe()
 //--clases en js----
 //Por debajo todos siguen siendo prototipos
 class Persona{
-    constructor(name,apellido){
+    constructor(apellido,name,altura){
+        this.apellido=apellido
         this.name=name
-        this.appelido=apellido
         this.altura=altura
     }
-    soyAlto(){
+    soyAlto(){ 
         return this.altura>1.8
     }
+    sayHi(callback){
+        console.log(`Hola soy ${this.name} la persona`)
+        if(callback){ 
+            callback(this.nombre,this.apellido,false)
+        }
+    }
 }
-var nico=new Persona('nico','diaz',1.9)
+var nico=new Persona('diaZ','NAME',1.9)
 //--herencia = extends
 class desarrollador extends Persona{
-super(nombre,apellido,altura)
+    constructor(pipi,pussy,altura){ //debemos corear el constructor
+    super(pipi,pussy,altura)
+    }
+    sayHi(callback){
+    if(callback){ 
+        callback(this.nombre,this.apellido,false)
+        console.log(this)
+    }
+    }
 }
 var oscar= new desarrollador('oscar','gomez',1.89)
+//SI HEREDO FUNCIONES 
+
+
+//--ASINCRONISMO----///
+//Podemos pasar fubncuiones como atributos
+function responderSaludo(nombre,apellido,esDev){
+    this.nombre=nombre 
+    this.apellido=apellido 
+    this.esDev=esDev
+    console.log(`Hi ${nombre} ${apellido}`)
+}
