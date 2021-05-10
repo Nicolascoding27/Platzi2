@@ -164,8 +164,13 @@ then(personaje => {
 })
 .then(personaje => {
     console.log(`Hola mi nombre es ${personaje.name}`)
-     return ObtenerPersonaje(2)
+     return ObtenerPersonaje(3)
+})  
+.then(personaje => {
+    console.log(`Hola mi nombre es ${personaje.name}`)
+     return ObtenerPersonaje(4)
 })
-
-
+.then(personaje => {
+    console.log(`Hola mi nombre es ${personaje.name}`)
+})
 
