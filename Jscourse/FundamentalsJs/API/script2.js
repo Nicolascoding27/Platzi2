@@ -1,5 +1,5 @@
 const API_URL='https://swapi.dev/api/' //almaceno la URL de la api, siempre fijo
-const API_PEOPLE='people/:id/' //saco a la gente de la api
+const API_PEOPLE='people/:id/' //saco a la gente de la api--para ser organizados
 
 //-Paso 2
 function ObtenerPersonaje(id){
@@ -8,7 +8,7 @@ function ObtenerPersonaje(id){
     //2.2 crear variables para usarlas en la promesa
     const DONE=4
     const  STATUS =200
-    const CHARACTER=`${API_URL}${API_PEOPLE.replace(':id',id)}`   ///convirtiendO A STING PARA QUE LA API ENTIENDA
+    const CHARACTER=`${API_URL}${API_PEOPLE.replace(':id',id)}`   ///convirtiendo A STING PARA QUE LA API ENTIENDA
     //--PASO3---//las promesas tienen estos dos parametros por defecto
     let promise=new Promise((resolve,reject) =>{
         objreq.onreadystatechange=(()=>{
@@ -48,4 +48,5 @@ then(personaje => {
 })
 .then(personaje => {
     console.log(`Hola mi nombre es ${personaje.name}`)
-})
+}).catch(onError) //importante para cojer los errores!!!!!
+
