@@ -94,7 +94,7 @@ async function Obtain_characters() {
 Obtain_characters()
 ///OBJETO TIPO PROMESA 
 //manejo en paralelo
-
+//-like callback hell but with =return in the function
 //encadenando promesas
 /* Obtain_character(1)
 .then(personaje => {
