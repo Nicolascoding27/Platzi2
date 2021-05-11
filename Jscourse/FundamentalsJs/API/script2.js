@@ -10,7 +10,7 @@ function ObtenerPersonaje(id){
     const  STATUS =200
     const CHARACTER=`${API_URL}${API_PEOPLE.replace(':id',id)}`   ///convirtiendo A STING PARA QUE LA API ENTIENDA
     //--PASO3---//las promesas tienen estos dos parametros por defecto
-    let promise=new Promise((resolve,reject) =>{
+let promise=new Promise((resolve,reject) =>{
         objreq.onreadystatechange=(()=>{
             //condiciones para la peticion
         if(objreq.readyState===DONE){
@@ -27,26 +27,47 @@ function ObtenerPersonaje(id){
 //PASO 3 TRY AND CATCH// SE NECESITA CREAR LA FUNCION OnError
 function onError(id){
     console.log(`Tenemos un error al obtener ${id}`)
-}  
+}  //Se usa en el catch error 
 
 //--First request--------//De manera paralela
 //se puede con aync o juntando objetos
 ////---Con promesas en paralelo
+//-Request en serie 
+// ObtenerPersonaje(1).
+// then(personaje => {
+//     console.log(`Hola mi nombre es ${personaje.name}`)
+//      return ObtenerPersonaje(2)//aca devolvemos la promesa del personaje 2 
+// })
+// .then(personaje => {
+//     console.log(`Hola mi nombre es ${personaje.name}`)
+//      return ObtenerPersonaje(3)
+// })  
+// .then(personaje => {
+//     console.log(`Hola mi nombre es ${personaje.name}`)
+//      return ObtenerPersonaje(4)
+// })
+// .then(personaje => {
+//     console.log(`Hola mi nombre es ${personaje.name}`)
+// }).catch(onError) //importante para cojer los errores!!!!!
+//Por otro lado el catch coje los errores de todos las promesas. 
+///---Prromesas en paralelo----///MAS FACIL 
+//Generar arrays con multiples promesas 
+// var ids=[1,2,3,4,5,6,7]
+// //--map toma arrays y modifica cada elemento
+// var promesas=ids.map (id=> ObtenerPersonaje(id))//tenemos 7 promesas 
 
-ObtenerPersonaje(1).
-then(personaje => {
-    console.log(`Hola mi nombre es ${personaje.name}`)
-     return ObtenerPersonaje(2)
-})
-.then(personaje => {
-    console.log(`Hola mi nombre es ${personaje.name}`)
-     return ObtenerPersonaje(3)
-})  
-.then(personaje => {
-    console.log(`Hola mi nombre es ${personaje.name}`)
-     return ObtenerPersonaje(4)
-})
-.then(personaje => {
-    console.log(`Hola mi nombre es ${personaje.name}`)
-}).catch(onError) //importante para cojer los errores!!!!!
+// Promise.all(promesas).then(personajes=>console.log(personajes)).catch(onError)
 
+//---AHORA CON ASYNC AWAIT---///
+async function obtenerPersonajes(){
+    var ids=[1,2,3,4,5,6,7]
+    //--map toma arrays y modifica cada elemento
+    var promesas=ids.map (id=> ObtenerPersonaje(id))//tenemos 7 promesas
+    try{ //await dentro del try 
+    var personajes= await Promise.all(promesas) 
+    }
+    catch(id){
+        onError(id)
+    }
+}
+obtenerPersonajes()
