@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Product}from './product.model' //estamos importando el tipado para poder usarlo en el producto 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,7 +19,7 @@ deleteItem(index:number){
   this.amigos.splice(index,1) //cuantos elementos deseo borrar, 1 posicion
 }
 //Vamos a recorrer un objeto que almacena las imagenes 
-products = [
+products:Product[] = [ //el tipado 'proteje nuestro codigo'
   {
     id: '1',
     image: 'assets/images/camiseta.png',

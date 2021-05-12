@@ -1,0 +1,9 @@
+<h1>Tu producto es:</h1>
+<h3> {{product.title}} </h3>
+<h2>La imagen del producto es:</h2>
+<img [src]="product.image" alt="">
+<strong>${{product.price}}</strong>]
+<!-- Agregamos boton que al clickear va a imprimir agregar al carrito  -->
+<button (click)='addCart()'>Agregar al carrito</button> 
+<!-- Despues de esto degbemos hacer uso del selector colocado en el componente en el html global en appcomponent -->
+
