@@ -1,1 +1,21 @@
 <p>products works!</p>
+<div class="product-grid">
+    <!-- Como app product sabe que es productos.
+    Porque estoy ene el mismo componente y en el typescript declare la variable product que
+    es un array de objetos  
+    -->
+     
+     <!-- Donde quedan guardadas las variables en angular 
+        en la clase de cada componente 
+    -->
+        <!-- Ahora bien debo tambien tener en la clase el metodo clickProduct() para poder hacer uso de 
+        el en el app-product 
+           -->
+     <app-product *ngFor="let product of products" (productClicked)="clickProduct($event)" [product]="product"></app-product>
+    <!-- @import => Lo uso con []
+    @export => Lo uso con ()
+     -->
+     
+</div> 
+<input type="text" [(ngModel)]="power">
+    {{power |pipedepipe}}

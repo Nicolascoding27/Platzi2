@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import{ProductComponent} from './components/product.component';
 import { CartComponent } from './cart/cart.component';
 import { PipedepipePipe } from './pipedepipe.pipe';
-import { HighlightDirective } from './highlight.directive' 
+import { HighlightDirective } from './highlight.directive' ;
+import {ProductsComponent}from './products/products.component'
+import { from } from 'rxjs';
+import { DemoComponent } from './demo/demo.component';
 //Importo el componente para poder hacer uso de e'
 //Lo deobo poner en declarations para que angular lo reconozca 
 @NgModule({
@@ -15,7 +18,9 @@ import { HighlightDirective } from './highlight.directive'
     ProductComponent,
     CartComponent,
     PipedepipePipe,
-    HighlightDirective
+    HighlightDirective,
+    ProductsComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
