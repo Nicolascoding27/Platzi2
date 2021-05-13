@@ -4,6 +4,9 @@
     border: 0;
     box-sizing: border-box;
 }
+body{
+    background:#F9C71B;
+}
 .product-grid{
     display: grid;
     //Empezando con mobile-first
@@ -12,6 +15,6 @@
 }
 @media (min-width:576px){
     .product-grid{
-        grid-template-columns:repeat(4,1fr)
+        grid-template-columns:repeat(3,1fr)
     }
 }
