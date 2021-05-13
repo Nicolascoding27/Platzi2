@@ -8,6 +8,7 @@ import {Product}from './product.model' //estamos importando el tipado para poder
 export class AppComponent {
   title = '';
   amigos=[]
+  power=10;
   bienvenida='Hola esta es mi Todo list ,agrega o borra lo que tienes que hacer' //esta variable puede ser llamada usando sting interpolation
 //Creacion del metodo para usar con el boton
   addItem(){

@@ -37,6 +37,7 @@ export class ProductComponent implements OnInit,DoCheck{ //We need to export thi
 //    ngOnChanges(changes:SimpleChanges){ //detectar cambios
 //     console.log(`2.ngOnChanges`)
 //    }
+   today= new Date();
    ngOnInit(){
     console.log('3.ngOnInit')
     }

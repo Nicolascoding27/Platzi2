@@ -20,14 +20,16 @@ img{//solo se aplica para este compopnente
 }
 button{
     border-radius: 25px;
-    height: 50px;
-    background:linear-gradient(#e43a15,#e65245);
+    height: 80px;
+    background: #a0a0a0;
     font-size: 20px;
     color: white;
+    padding-bottom: 10px;
     transition: all 1s;
     width: 100%;
     &:hover{
-        background: #a0a0a0;
+        
+        background:linear-gradient(#e43a15,#e65245);
         cursor: pointer;
     }
 }
@@ -40,4 +42,19 @@ button{
     justify-content: center;
     border-radius: 25px;
     padding: 15px 20px;
+}
+.product__info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    strong{
+        font-size: 40;
+        padding: 20px;
+        border-bottom: 1px solid white;
+    }
+    p{
+        text-align: justify;
+        padding: 20px;
+    }
 }

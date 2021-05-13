@@ -43,7 +43,9 @@
 <!-- Si pongo el ngfor aca estoy generando varios divs -->
     <div class="product-grid"> 
         <app-product *ngFor="let product of products" (productClicked)="clickProduct($event)" [product]="product"></app-product>
-</div> 
+    </div> 
+    <input type="text" [(ngModel)]="power">
+        {{power |pipedepipe}}
     <!-- Igualamos a la variable iteradora para unirlo al componente -->
     
     <!-- $event permite completar el atributo id, se refiere al id que sale cuando emito el evento 
