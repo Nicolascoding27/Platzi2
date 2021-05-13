@@ -7,7 +7,7 @@ import {Product}from './product.model' //estamos importando el tipado para poder
 })
 export class AppComponent {
   title = '';
-  amigos=['']
+  amigos=[]
   bienvenida='Hola esta es mi Todo list ,agrega o borra lo que tienes que hacer' //esta variable puede ser llamada usando sting interpolation
 //Creacion del metodo para usar con el boton
   addItem(){
@@ -17,6 +17,11 @@ export class AppComponent {
 //usamos typescript para tipear las variables ej: index:number
 deleteItem(index:number){
   this.amigos.splice(index,1) //cuantos elementos deseo borrar, 1 posicion
+}
+///---Metodo para recibir y hacer uso del @output
+clickProduct(id){ //recordar que recibo id
+  console.log('product');
+  console.log(id)//ahora enviamos al app-component.html para usarlo
 }
 //Vamos a recorrer un objeto que almacena las imagenes 
 products:Product[] = [ //el tipado 'proteje nuestro codigo'

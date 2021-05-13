@@ -16,7 +16,7 @@
      <!-- case('julian')
       -->
     <p *ngSwitchCase=" 'julian'">Que chimba que te llames Julian mi hermano se llama asi</p>
-    <p *ngSwitchCase=" '`'">Los Camilos dominan el mundo</p>
+    <p *ngSwitchCase="'camilo'">Los Camilos dominan el mundo</p>
     <p *ngSwitchDefault>No hay match pa</p>
 <!--     
     <p>QWue chimba que te llames Julian mi hermano se llama asi</p>
@@ -39,9 +39,15 @@
     <button (click)="deleteItem(i)">Delete item</button>
     </li>
 </ul>
-<div class="products" *ngFor="let product of products">
+<!-- //esta info viene de app component  -->
+<!-- Si pongo el ngfor aca estoy generando varios divs -->
+    <div class="product-grid"> 
+        <app-product *ngFor="let product of products" (productClicked)="clickProduct($event)" [product]="product"></app-product>
+</div> 
     <!-- Igualamos a la variable iteradora para unirlo al componente -->
-    <app-product [product]="product"></app-product> 
+    
+    <!-- $event permite completar el atributo id, se refiere al id que sale cuando emito el evento 
+     -->
     <!-- Le enviamos datos al input
      -->
    <!-- Sobre el objeto iterador mandamos las propiedades del objeto que queremos
