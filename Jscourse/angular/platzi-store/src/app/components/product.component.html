@@ -1,8 +1,8 @@
-<body>
+
     <div class="product__title">
     <h1> {{product.title | uppercase }} </h1> 
 <!-- //este pipe convierte todo a mayuscula -->
-</div>
+    </div>
 <img [src]="product.image" alt="">
 <!-- currencie para pipe de moneda, for default it comes in dollars -->
 <div class="product__info">
@@ -14,4 +14,4 @@
 <!-- Agregamos boton que al clickear va a imprimir agregar al carrito  -->
 <button (click)='addCart()'>Agregar al carrito</button> 
 <!-- Despues de esto degbemos hacer uso del selector colocado en el componente en el html global en appcomponent -->
-</body>
+
