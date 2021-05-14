@@ -1,0 +1,36 @@
+:host{
+    // margin: 0;
+    // padding: 0;
+    width: 100%;
+    // box-sizing: border-box;
+    background-color:black;
+}
+header{
+    background:#4F72A2;
+    margin-bottom: 50px;
+    .navbar{
+        width: 100%;    
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        .navbar__logo{
+            height: 100px;
+            width: 200px;
+            background-size: cover;
+        }
+        .navbar__list
+        {
+            display: flex;
+            li{
+                padding: 0 20px;
+                list-style: none;
+                &:hover{
+                    cursor: pointer;
+                    color: yellow;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}

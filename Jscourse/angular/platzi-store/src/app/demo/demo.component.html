@@ -1,1 +1,59 @@
-<p>demo works!</p>
+
+<!-- INTRO A DATA BINDING  -->
+<!-- {{bienvenida}}
+<input type="text" [(ngModel)]='title'>
+{{title}} -->
+<!-- ---LLAMANDO  MI PRIMER COMPONENTE---Hago uso del selector que cree en product.components -->
+
+<!-- Se va a mostrar porque la condicion es verdadera  -->
+<!-- <div *ngIf="1===1">Esto es cierto</div> -->
+<!-- Se muestra si solo si la variable title que en este caso se conoce como title es Nicolas -->
+<!-- <div *ngIf="title.toLocaleLowerCase()==='nicolas'">Wow nos llamamos igual que cool</div> -->
+<!-- Ahora vamos a usar ngswitch para tener otras opciones -->
+<!-- <div [ngSwitch]="title.toLocaleLowerCase()">  -->
+    <!-- =switch(variable)
+     -->
+     <!-- case('julian')
+      -->
+    <!-- <p *ngSwitchCase=" 'julian'">Que chimba que te llames Julian mi hermano se llama asi</p>
+    <p *ngSwitchCase="'camilo'">Los Camilos dominan el mundo</p>
+    <p *ngSwitchDefault>No hay match pa</p> -->
+<!--     
+    <p>QWue chimba que te llames Julian mi hermano se llama asi</p>
+    <p>QWue chimba que te llames Julian mi hermano se llama asi</p> -->
+<!-- </div> -->
+<!-- Ng for nos ayuda a iterar un array  -->
+<!-- Podemos coger cualquier elemento y este es el que va a ser iterable -->
+<!-- Al hacer click llamare a un metodo que debe estar sentenciado en el appcomponent -->
+<!-- cada vez que haga click se ejecutara la funcion -->
+<!-- <button (click)="addItem()">Add item</button>
+<ul> -->
+    <!-- El li va a ser el que se iterara multiples veces
+    imprime mio array completo en una lista -->
+    <!-- El index as i nos permite saber el item de la posicion
+     usar comillas dobles al pareceres mas aconsejable , lo podemos
+    usar para agregar items lo cual lo vamos a hacer con un boton -->
+    <!-- <li *ngIf='amigos.length===0'>La lista esta vacia</li>
+    <li *ngFor="let amigo of amigos;index as i"> 
+        {{amigo}} {{i}}
+    <button (click)="deleteItem(i)">Delete item</button>
+    </li>
+</ul> -->
+<!-- //esta info viene de app component  -->
+<!-- Si pongo el ngfor aca estoy generando varios divs -->
+ <!-- Igualamos a la variable iteradora para unirlo al componente -->
+    
+    <!-- $event permite completar el atributo id, se refiere al id que sale cuando emito el evento 
+     -->
+    <!-- Le enviamos datos al input
+     -->
+   <!-- Sobre el objeto iterador mandamos las propiedades del objeto que queremos
+    -->
+    <!-- {{product.title}} -->
+    <!-- Para la image debo modificar el source con el objetivo de mostrar
+    la imagen de otra manera solo mostrare la source 
+     -->
+    <!-- <img [src]="product.image" alt="">
+    ${{product.price}}
+</div> --> 
+<h1>HOLA</h1>
