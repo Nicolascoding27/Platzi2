@@ -9,7 +9,7 @@ import {DemoComponent} from './demo/demo.component'
 const routes: Routes = [
 {
   path:'home',
-  component:HomeComponent                      
+  component:HomeComponent                
 },
 {
   path:'product',

@@ -1,17 +1,17 @@
 
-    <div class="product__title">
+<div class="product__title">
     <h1> {{product.title | uppercase }} </h1> 
 <!-- //este pipe convierte todo a mayuscula -->
-    </div>
-<img [src]="product.image" alt="">
-<!-- currencie para pipe de moneda, for default it comes in dollars -->
-<div class="product__info">
-    <strong>{{product.price |currency}}</strong>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo expedita nesciunt. Numquam ipsum consectetur tenetur aut consequuntur perspiciatis exercitationem vitae quidem, nulla animi nam. Ex maxime sit illo quos!
-        nulla, saepe exercitationem sit dolores enim voluptatem tempora! Et, error ducimus corrupti dolor natus aliquam enim eum accusamus.</p>
-            <p>{{today |date:"HH:MM"}}</p>
 </div>
+        <img [src]="product.image" alt="">
+<!-- currencie para pipe de moneda, for default it comes in dollars -->
+            <div class="product__info">
+                <strong>{{product.price |currency}}</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo expedita nesciunt. Numquam ipsum consectetur tenetur aut consequuntur perspiciatis exercitationem vitae quidem, nulla animi nam. Ex maxime sit illo quos!
+        nulla, saepe exercitationem sit dolores enim voluptatem tempora! Et, error ducimus corrupti dolor natus aliquam enim eum accusamus.</p>
+                        <p>{{today |date:"HH:MM"}}</p>
+            </div>
 <!-- Agregamos boton que al clickear va a imprimir agregar al carrito  -->
-<button (click)='addCart()'>Agregar al carrito</button> 
+                                <button (click)='addCart()'>Agregar al carrito</button> 
 <!-- Despues de esto degbemos hacer uso del selector colocado en el componente en el html global en appcomponent -->
 
