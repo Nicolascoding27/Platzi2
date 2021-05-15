@@ -5,6 +5,7 @@
     // box-sizing: border-box;
     background-color:black;
 }
+
 header{
     background:#4F72A2;
     margin-bottom: 50px;
@@ -26,9 +27,7 @@ header{
             a{
                 color: white;
                 text-decoration: none;
-                &:active{
-                    color: blue;
-                }
+              
             }
             li{
                 padding: 0 20px;
@@ -41,4 +40,7 @@ header{
             }
         }
     }
+}
+a.active{
+background-color:blue;
 }
