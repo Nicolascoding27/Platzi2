@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 //Importo el componente para poder hacer uso de e'
 //Lo deobo poner en declarations para que angular lo reconozca 
 @NgModule({
@@ -28,6 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     BannerComponent,
     FooterComponent,
+    ContactComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
