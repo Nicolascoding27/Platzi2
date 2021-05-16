@@ -7,32 +7,43 @@ import {ContactComponent} from './contact/contact.component'
 import {DemoComponent} from './demo/demo.component'
 import{PageNotFoundComponent} from './page-not-found/page-not-found.component'
 import{ProductDetailsComponent} from './product-details/product-details.component'
-// import {} from './home'
+import {LayoutComponent} from './layout/layout.component'
 const routes: Routes = [
 {
-  path:'home',
-  component:HomeComponent                
-},
-{
-  path:'product',
-  component:ProductComponent                      
-},
-{
-  path:'products',
-  component:ProductsComponent                      
-}
-,
-{
-  path:'contact',
-  component:ContactComponent                 
-},
+  path: '',
+  component:LayoutComponent,
+  children:[
+    {
+    path: '',
+    redirectTo:'/home',
+    pathMatch:'full',
+    },
+    {
+      path:'home',
+      component:HomeComponent                
+    },
+    {
+      path:'product',
+      component:ProductComponent                      
+    },
+    {
+      path:'products',
+      component:ProductsComponent                      
+    }
+    ,
+    {
+      path:'contact',
+      component:ContactComponent                 
+    },
+    {
+      path:'products/:id',//si le mando un id 
+      component:ProductDetailsComponent                  
+    }
+  ] //componentes hijos que van a recibir el layout
+}, 
 {
   path:'demo',
   component:DemoComponent                     
-},
-{
-  path:'products/:id',//si le mando un id 
-  component:ProductDetailsComponent                  
 },
 {
   path:'**',

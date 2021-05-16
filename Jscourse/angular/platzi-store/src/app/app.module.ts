@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TestComponent } from './test/test.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { LayoutComponent } from './layout/layout.component';
 //Importo el componente para poder hacer uso de e'
 //Lo deobo poner en declarations para que angular lo reconozca 
 @NgModule({
@@ -36,6 +37,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     PageNotFoundComponent,
     TestComponent,
     ProductDetailsComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
