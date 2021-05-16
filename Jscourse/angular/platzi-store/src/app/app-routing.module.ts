@@ -6,9 +6,9 @@ import {ProductsComponent} from './products/products.component'
 import {ContactComponent} from './contact/contact.component'
 import {DemoComponent} from './demo/demo.component'
 import{PageNotFoundComponent} from './page-not-found/page-not-found.component'
+import{ProductDetailsComponent} from './product-details/product-details.component'
 // import {} from './home'
 const routes: Routes = [
-
 {
   path:'home',
   component:HomeComponent                
@@ -31,9 +31,13 @@ const routes: Routes = [
   component:DemoComponent                     
 },
 {
+  path:'products/:id',//si le mando un id 
+  component:ProductDetailsComponent                  
+},
+{
   path:'**',
   component:PageNotFoundComponent
-}
+},
 ];//aca ponemos las rutas 
 
 @NgModule({

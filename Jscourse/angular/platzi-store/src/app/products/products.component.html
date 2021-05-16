@@ -11,11 +11,9 @@
         <!-- Ahora bien debo tambien tener en la clase el metodo clickProduct() para poder hacer uso de 
         el en el app-product 
            -->
-     <app-product *ngFor="let product of products" (productClicked)="clickProduct($event)" [product]="product"></app-product>
+     <app-product *ngFor="let product of products" (productClicked)="clickedProduct($event)" [product]="product"></app-product>
     <!-- @import => Lo uso con []
     @export => Lo uso con ()
      -->
      
 </div> 
-<input type="text" [(ngModel)]="power">
-    {{power |pipedepipe}}
