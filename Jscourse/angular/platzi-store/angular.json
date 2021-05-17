@@ -36,7 +36,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "/home/nicoding27/Platzi/Jscourse/angular/platzi-store/node_modules/swiper/swiper.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/flexboxgrid/dist/flexboxgrid.min.css"
             ],
             "scripts": []
           },

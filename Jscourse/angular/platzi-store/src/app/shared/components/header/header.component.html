@@ -1,11 +1,18 @@
-<header>
+<mat-toolbar>
+  <mat-toolbar-row>
     <div class="navbar">
-     <img [src]="image" class="navbar__logo" alt="">
-       <ul class="navbar__list">
-        <li> <a routerLink="/home" routerLinkActive="active"> Home</a></li>
-          <li><a routerLink="/products" routerLinkActive="active" >Productos</a></li> 
-            <li> <a routerLink="/contact" routerLinkActive="active"> Contact</a></li>
-        </ul> 
-    </div>
-</header>
+      <img [src]="image" class="navbar__logo" alt="">
+        <ul class="navbar__list">
+         <li> <a mat-button routerLink="/home" routerLinkActive="active"> Home</a></li>
+           <li><a mat-button routerLink="/products" routerLinkActive="active" >Productos</a></li> 
+             <li> <a mat-button routerLink="/contact" routerLinkActive="active"> Contact</a></li>
+         </ul> 
+     </div>
+     <a mat-raised-button matBadge=4 matBadgeColor='warn'>
+     <mat-icon>shopping_cart</mat-icon>
+     Carrito
+    </a>
+  </mat-toolbar-row>
+
+</mat-toolbar>
 

@@ -4,6 +4,7 @@ import { PipedepipePipe } from './pipes/pipedepipe/pipedepipe.pipe';
 import { HeaderComponent } from './components/header/header.component';
 import {RouterModule} from '@angular/router'
 import { FooterComponent } from './components/footer/footer.component';
+import {MaterialModule} from '../material/material.module'
 @NgModule({
   declarations: [
     PipedepipePipe,
@@ -12,11 +13,12 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule, //este modulo tiene ngfor, ngif
-    RouterModule
+    RouterModule,
+    MaterialModule
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ]
 })
 export class SharedModule { }

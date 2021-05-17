@@ -6,9 +6,16 @@
     background-color:black;
 }
 
-header{
+mat-toolbar{
     background:#4F72A2;
     margin-bottom: 50px;
+    mat-icon{
+        color: white;
+    }
+    a{
+        background: none;
+        color: white;
+    }
     .navbar{
         width: 100%;    
         display: flex;

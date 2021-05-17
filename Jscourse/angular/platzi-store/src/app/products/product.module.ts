@@ -21,5 +21,4 @@ import{MaterialModule} from '../material/material.module'
   }
 )
 export class ProductModule{
-
 }
