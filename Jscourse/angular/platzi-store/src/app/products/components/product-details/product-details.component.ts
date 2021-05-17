@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Params} from '@angular/router';
-import {ProductsService} from '../core/service/products/products.service';
-import {Product} from '../product.model'
+import {ProductsService} from '../../../core/service/products/products.service'
+import {Product} from '../../../product.model'
+import { Inject } from '@angular/core';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.scss']
 })
+
+
+// @Inject('url') private url: string;
 export class ProductDetailsComponent implements OnInit {
   //necesitamos crear una variable publica que almacene a los productos
   product:Product;

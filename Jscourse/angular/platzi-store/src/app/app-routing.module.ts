@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes,PreloadAllModules } from '@angular/router';
-import { ProductComponent } from './product/product.component'
-import {ProductsComponent} from './products/products.component'
 import {ContactComponent} from './contact/contact.component'
 import {DemoComponent} from './demo/demo.component'
 import{PageNotFoundComponent} from './page-not-found/page-not-found.component'
-import{ProductDetailsComponent} from './product-details/product-details.component'
 import {LayoutComponent} from './layout/layout.component'
 import {AdminGuard} from './admin.guard'
 const routes: Routes = [
@@ -23,23 +20,13 @@ const routes: Routes = [
       loadChildren:()=>  import ('./home/home.module').then(m=>m.HomeModule)            
     },
     {
-      path:'product',
-      component:ProductComponent                      
-    },
-    {
       path:'products',
-      canActivate:[AdminGuard],
-      component:ProductsComponent                      
-    }
-    ,
+      loadChildren:()=>  import ('./products/product.module').then(m=>m.ProductModule)      
+    },
     {
       path:'contact',
       canActivate:[AdminGuard],
       component:ContactComponent                 
-    },
-    {
-      path:'products/:id',//si le mando un id 
-      component:ProductDetailsComponent                  
     }
   ] //componentes hijos que van a recibir el layout
 }, 

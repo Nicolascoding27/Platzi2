@@ -1,5 +1,5 @@
 //Importando el tipado 
-import {Product}from '../product.model' ///Ordenar inputs con enter 
+import {Product}from '../../../../product.model' ///Ordenar inputs con enter 
 import {Component,
     Input,
     Output,

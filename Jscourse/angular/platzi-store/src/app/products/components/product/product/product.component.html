@@ -12,7 +12,7 @@
                         <p>{{today |date:"HH:MM"}}</p>
             </div>
 <!-- Agregamos boton que al clickear va a imprimir agregar al carrito  -->
-                                <button (click)='addCart()'>Agregar al carrito</button>
+                                <button mat-raised-button color="primary" (click)='addCart()'>Agregar al carrito</button>
                                 <!-- Hacemos  una concatenacion con el id para pasarle el id 
                                 -->
                             <a [routerLink]="['/products',product.id]">Mas detalles</a> 
