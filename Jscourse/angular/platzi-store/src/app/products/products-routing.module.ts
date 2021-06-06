@@ -4,6 +4,7 @@ import {ProductComponent} from './components/product/product/product.component'
 import {ProductsComponent} from './components/products/products.component'
 import{ProductDetailsComponent} from './components/product-details/product-details.component'
 import {AdminGuard} from '../admin.guard'
+
     const routes:Routes=[
         {
             path: '',
