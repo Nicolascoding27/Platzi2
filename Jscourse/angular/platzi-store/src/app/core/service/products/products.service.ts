@@ -14,6 +14,6 @@ export class ProductsService {
     return this.http.get<Product[]>('http://platzi-store.herokuapp.com/products')
   }
   getProduct(id:string){
-    return this.http.get<Product>(`this.PRODUCTOS_API/${id}`)
+    return this.http.get<Product>(`http://platzi-store.herokuapp.com/products/${id}`)
   }//tipamos la variable
 }

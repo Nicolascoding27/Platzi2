@@ -23,15 +23,17 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit():    void {
     this.route.params.subscribe((params:Params)=>{
     const id =params.id
-    this.product=this.productservice.getProduct(id)
+    console.log(id)
+    // this.product=this.productservice.getProduct(id)
       // console.log(id)// eliminando el objeto json 
       //cuando es vacio me genera undefined
+    this.fetchProduct(id);
     });
   }
   fetchProduct(id:string){
     this.productservice.getProduct(id).subscribe(product=>
       {
-        console.log(product)
-    })
+        this.product=product;
+      });
   }
 }
