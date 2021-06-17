@@ -12,6 +12,7 @@ import { LayoutComponent } from './layout/layout.component';
 import {SharedModule} from './shared/shared.module'
 import {CoreModule} from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import{HttpClientModule} from '@angular/common/http'
 //Importo el componente para poder hacer uso de e'
 //Lo deobo poner en declarations para que angular lo reconozca 
 @NgModule({
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     FormsModule,
     SharedModule,
     CoreModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

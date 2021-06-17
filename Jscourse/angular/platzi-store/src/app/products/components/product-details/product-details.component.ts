@@ -28,5 +28,10 @@ export class ProductDetailsComponent implements OnInit {
       //cuando es vacio me genera undefined
     });
   }
-
+  fetchProduct(id:string){
+    this.productservice.getProduct(id).subscribe(product=>
+      {
+        console.log(product)
+    })
+  }
 }
